@@ -157,7 +157,7 @@ function keyPress( key ) {
             tick();
             break;
         case 'up':
-            while( valid(1) ) {
+            while( valid(0, 1) ) {
                 --currentY;
             }
             tick();
