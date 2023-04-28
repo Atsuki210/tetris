@@ -3,8 +3,9 @@ document.body.onkeydown = function( e ) {
         37: 'left',
         39: 'right',
         40: 'down',
-        38: 'rotate',
-        32: 'drop'
+        38: 'up',
+        32: 'drop',
+        16: 'rotate'
     };
     if ( typeof keys[ e.keyCode ] != 'undefined' ) {
         keyPress( keys[ e.keyCode ] );

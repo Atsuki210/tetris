@@ -22,7 +22,7 @@ var shapes = [
       1, 1, 1 ]
 ];
 var colors = [
-    'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'purple'
+    'cyan', 'orange', 'aqua', 'yellow', 'red', 'lime', 'purple'
 ];
 
 // creates a new 4x4 shape in global variable 'current'
@@ -153,6 +153,12 @@ function keyPress( key ) {
         case 'drop':
             while( valid(0, 1) ) {
                 ++currentY;
+            }
+            tick();
+            break;
+        case 'up':
+            while( valid(1, 0) ) {
+                --currentY;
             }
             tick();
             break;
